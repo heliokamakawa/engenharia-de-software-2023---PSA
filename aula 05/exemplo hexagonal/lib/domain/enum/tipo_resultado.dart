@@ -1,0 +1,3 @@
+enum TipoResultado{
+  aprovado, reprovado
+}
