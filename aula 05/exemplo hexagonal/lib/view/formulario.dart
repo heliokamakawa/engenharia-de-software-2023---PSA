@@ -16,11 +16,8 @@ class Formulario extends StatelessWidget {
                 //envio os dados
                 var dadosAluno = DadosAluno(nome: 'João', email: 'joao@email.com', CPF: '111');
                 var dadosAvaliacao = DadosAvaliacao(nota: 6, percentualFalta: 15);
-                DDMResultado ddmResultado = DDMResultado(
-                  dadosAluno: dadosAluno,
-                  dadosAvaliacao: dadosAvaliacao
-                );
-                ddmResultado.enviarResultado();
+                DDMResultado ddmResultado = DDMResultado();
+                ddmResultado.enviarResultado(dadosAvaliacao: dadosAvaliacao, dadosAluno: dadosAluno);
               }, 
               child: const Text('enviar'))
           ],
